@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat');
+
+
+$f-base: 'Lato', sans-serif;
+$f-secondary: 'Montserrat', sans-serif;
+
+@mixin title-xl {
+  font-size: 2.6rem;
+  font-family: $f-secondary;
+  color: $c-dark;
+}
+
+@mixin title-md {
+  font-size: 2.2rem;
+  font-family: $f-secondary;
+  color: $c-dark;
+}
+@mixin base-font {
+  font-family: $f-base;
+  color: $c-grey;
+  font-size: 1.6rem;
+}
