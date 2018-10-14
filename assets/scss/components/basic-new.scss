@@ -1,0 +1,37 @@
+.nf-basic-new {
+  $basicNew: &;
+  margin-bottom: 9rem;
+  &__img {
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+    }
+  }
+  &__headline {
+    @include title-xl();
+    margin-bottom: 1rem;
+  }
+  &__wrapper {
+    @include basic-flex();
+    @include justify-between();
+    @include align-center();
+    #{$basicNew}__headline {
+      font-size: 1.8rem;
+    }
+    &--left {
+      flex-basis: 70%;
+      @media only screen and (max-width: 768px) {
+        p {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    &--right {
+      flex-basis: 28%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .nf-section {
   &__title {
     @include title-section();
+    margin-bottom: 4.5rem;
   }
 }

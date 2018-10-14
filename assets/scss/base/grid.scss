@@ -30,6 +30,11 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
+@mixin justify-center {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
 @mixin align-center {
   -webkit-align-items: center;
@@ -41,4 +46,26 @@
   display: grid;
   grid-gap: 1.6rem;
   grid-template-columns: 70% 30%;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.grid-2-col {
+  display: grid;
+  grid-gap: 1.6rem;
+  grid-template-columns:  50% 50%;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.grid-4-col {
+  display: grid;
+  grid-gap: 1.6rem;
+  grid-template-columns: 25% 25% 25% 25%;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
