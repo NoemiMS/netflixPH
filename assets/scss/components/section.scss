@@ -1,0 +1,5 @@
+.nf-section {
+  &__title {
+    @include title-section();
+  }
+}

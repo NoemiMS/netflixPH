@@ -1,0 +1,44 @@
+
+.wrapper {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  width:100%;
+  @media only screen and (min-width: 1024px) {
+    padding: 0;
+    width: 96rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    padding: 0;
+    width: 110rem;
+  }
+}
+
+@mixin basic-flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin justify-between {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin justify-end {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin align-center {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.grid-sidebar {
+  display: grid;
+  grid-gap: 1.6rem;
+  grid-template-columns: 70% 30%;
+}

@@ -5,3 +5,7 @@ html {
 body {
   @include base-font;
 }
+
+* {
+  box-sizing: border-box;
+}

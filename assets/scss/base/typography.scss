@@ -15,8 +15,22 @@ $f-secondary: 'Montserrat', sans-serif;
   font-family: $f-secondary;
   color: $c-dark;
 }
+
+@mixin title-sm {
+  font-size: 1.8rem;
+  font-family: $f-secondary;
+  color: $c-dark;
+}
+
 @mixin base-font {
   font-family: $f-base;
   color: $c-grey;
   font-size: 1.6rem;
+}
+
+@mixin title-section {
+  color: $c-secondary;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
