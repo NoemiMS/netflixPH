@@ -44,8 +44,8 @@
 
 .grid-sidebar {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: 70% 30%;
+  grid-gap: 9%;
+  grid-template-columns: 67% 25%;
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -53,8 +53,8 @@
 }
 .grid-2-col {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns:  50% 50%;
+  grid-gap: 9%;
+  grid-template-columns:  46% 46%;
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -62,8 +62,8 @@
 }
 .grid-4-col {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 4%;
+  grid-template-columns: 22% 22% 22% 22%;
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;

@@ -34,3 +34,16 @@ $f-secondary: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@mixin link {
+  font-family: $f-secondary;
+  font-size: 1.8rem;
+  color: $c-dark;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 9rem;
+  display: block;
+  @media only screen and (max-width: 7684px) {
+    font-size: 1.5rem;
+  }
+}

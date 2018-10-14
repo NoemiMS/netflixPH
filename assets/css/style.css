@@ -222,6 +222,18 @@ body {
   .hidden-md {
     display: none; } }
 
+.nf-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 9rem;
+  display: block; }
+  @media only screen and (max-width: 7684px) {
+    .nf-link {
+      font-size: 1.5rem; } }
+
 .wrapper {
   padding: 0 1.5rem;
   margin: 0 auto;
@@ -237,8 +249,8 @@ body {
 
 .grid-sidebar {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: 70% 30%; }
+  grid-gap: 9%;
+  grid-template-columns: 67% 25%; }
   @media only screen and (max-width: 768px) {
     .grid-sidebar {
       display: flex;
@@ -246,8 +258,8 @@ body {
 
 .grid-2-col {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: 50% 50%; }
+  grid-gap: 9%;
+  grid-template-columns: 46% 46%; }
   @media only screen and (max-width: 768px) {
     .grid-2-col {
       display: flex;
@@ -255,8 +267,8 @@ body {
 
 .grid-4-col {
   display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: 25% 25% 25% 25%; }
+  grid-gap: 4%;
+  grid-template-columns: 22% 22% 22% 22%; }
   @media only screen and (max-width: 768px) {
     .grid-4-col {
       display: flex;
@@ -265,6 +277,9 @@ body {
 /* Components */
 .nf-header .wrapper {
   padding: 3.7rem 0; }
+  @media only screen and (max-width: 7684px) {
+    .nf-header .wrapper {
+      padding: 3.7rem 1.6rem; } }
 .nf-header__up {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -325,12 +340,23 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .nf-main-menu__item a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #9b9b9b; }
-  .nf-main-menu__item--active a {
-    color: #000; }
+  .nf-main-menu__item {
+    flex-shrink: 0; }
+    .nf-main-menu__item a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #9b9b9b; }
+    .nf-main-menu__item--active a {
+      color: #000; }
+  @media only screen and (max-width: 7684px) {
+    .nf-main-menu {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow-x: auto; }
+      .nf-main-menu__item {
+        padding-left: 2.5rem; }
+        .nf-main-menu__item:first-child {
+          padding-left: 0; } }
 
 .nf-section__title {
   color: #5e000b;
@@ -338,6 +364,32 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 4.5rem; }
+.nf-section__header {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 4.5rem; }
+  .nf-section__header .nf-section__title {
+    margin: 0;
+    position: relative; }
+    .nf-section__header .nf-section__title:after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #5e000b;
+      display: block;
+      position: absolute;
+      bottom: -2rem; }
+  .nf-section__header .nf-link {
+    margin: 0; }
 
 .nf-sign {
   display: -ms-flexbox;
@@ -358,6 +410,9 @@ body {
 
 .nf-basic-new {
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 7684px) {
+    .nf-basic-new {
+      margin-bottom: 6rem; } }
   .nf-basic-new__img {
     margin-bottom: 2rem; }
     .nf-basic-new__img img {
@@ -367,6 +422,8 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #000;
     margin-bottom: 1rem; }
+    .nf-basic-new__headline--sidebar {
+      font-size: 1.8rem; }
   .nf-basic-new__wrapper {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -377,8 +434,9 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-    .nf-basic-new__wrapper .nf-basic-new__headline {
-      font-size: 1.8rem; }
+    @media only screen and (max-width: 768px) {
+      .nf-basic-new__wrapper .nf-basic-new__headline {
+        font-size: 1.8rem; } }
     .nf-basic-new__wrapper--left {
       flex-basis: 70%; }
       @media only screen and (max-width: 768px) {

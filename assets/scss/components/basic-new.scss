@@ -1,6 +1,9 @@
 .nf-basic-new {
   $basicNew: &;
   margin-bottom: 9rem;
+  @media only screen and (max-width: 7684px) {
+    margin-bottom: 6rem;
+  }
   &__img {
     margin-bottom: 2rem;
     img {
@@ -10,13 +13,18 @@
   &__headline {
     @include title-xl();
     margin-bottom: 1rem;
+    &--sidebar {
+      font-size: 1.8rem;
+    }
   }
   &__wrapper {
     @include basic-flex();
     @include justify-between();
     @include align-center();
     #{$basicNew}__headline {
-      font-size: 1.8rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
     &--left {
       flex-basis: 70%;

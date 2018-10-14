@@ -1,6 +1,31 @@
 .nf-section {
+  $section: &;
   &__title {
     @include title-section();
     margin-bottom: 4.5rem;
+  }
+  &__header {
+    @include basic-flex();
+    @include align-center();
+    @include justify-between();
+    padding: 0 0 2rem;
+    border-bottom: 1px solid $c-ligthgrey;
+    margin-bottom: 4.5rem;
+    #{$section}__title {
+      margin: 0;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $c-secondary;
+        display: block;
+        position: absolute;
+        bottom: -2rem;
+      }
+    }
+    .nf-link {
+      margin: 0;
+    }
   }
 }

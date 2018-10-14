@@ -1,6 +1,10 @@
 .nf-header {
   .wrapper {
     padding: 3.7rem 0;
+
+    @media only screen and (max-width: 7684px) {
+      padding: 3.7rem 1.6rem;
+    }
   }
   &__up {
     @include basic-flex();
