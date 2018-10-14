@@ -277,7 +277,7 @@ body {
 /* Components */
 .nf-header .wrapper {
   padding: 3.7rem 0; }
-  @media only screen and (max-width: 7684px) {
+  @media only screen and (max-width: 768px) {
     .nf-header .wrapper {
       padding: 3.7rem 1.6rem; } }
 .nf-header__up {
@@ -312,6 +312,9 @@ body {
   border: none;
   box-shadow: none;
   margin-left: 3.6rem; }
+  @media only screen and (max-width: 7684px) {
+    .nf-header__button {
+      padding: 0.9rem 1.5rem; } }
 
 .nf-footer {
   background-color: #d8d8d8;
@@ -364,6 +367,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 4.5rem; }
+  @media only screen and (max-width: 7684px) {
+    .nf-section__title {
+      font-size: 1.6rem; } }
 .nf-section__header {
   display: -ms-flexbox;
   display: -webkit-flex;
